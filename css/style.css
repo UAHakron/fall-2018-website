@@ -88,12 +88,55 @@ a {
         #mainNav .nav-link.active:hover {
           color: white; } }
 
+/* SHOOTING STARS */
+.star {
+  display:block;
+  width:var(--starSize);
+  height:var(--starSize);
+  border-radius:50%;
+  background:#FFF;
+  top:var(--topBefore);
+  left:var(--leftBefore);
+  position:relative;
+  transform-origin:100% 0;
+  animation:star-ani 1s infinite ease-out;
+  animation-direction: normal;
+  opacity:0;
+}
+.star:after {
+  content:'';
+  position:absolute;
+  top:var(--topAfter);
+  left:var(--leftAfter);
+  border:2px solid #F00;
+  border-width:2px 150px 2px 150px; 
+  border-color:transparent transparent transparent #FFF;
+  transform:rotate(-135deg) translate3d(1px, -1px, 0);
+  transform-origin:0% 100%;
+  animation:shooting-ani 1s infinite  ease-out;
+  animation-direction: normal;
+}
+@-webkit-keyframes shooting-ani {
+  0% {}
+  50% { transform:scale(1) rotate(-135deg) translate(0px, 0px); }
+  100% { transform:scale(0.5) rotate(-135deg) translate(0px, -1px); }
+}
+
+@-webkit-keyframes star-ani {
+  0% {  opacity:0;
+        transform:scale(0) rotate(0) translate3d(0, 0, 0); }
+  50% { opacity:1;
+        transform:scale(1) rotate(0) translate3d(200px, 200px, 0); }
+  100% {opacity:0;
+        transform:scale(1) rotate(0) translate3d(300px, 300px, 0); }
+}
+
 .logo{
     width: 100%;
     height: auto;
     padding: 20px;
     margin: auto;
-    animation: 2s ease-out 0s 1 fadeIn;
+    animation: 1.5s ease-out 0s 1 fadeIn;
 }
 
 @keyframes fadeIn {
