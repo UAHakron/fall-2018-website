@@ -23,6 +23,7 @@ h6 {
   text-transform: uppercase; }
 
 p {
+  color: #F7F5E2;
   font-size: 16px;
   line-height: 1.5;
   margin: 0 0 25px; }
@@ -33,20 +34,21 @@ p {
       margin: 0 0 35px; } }
 
 a {
+  color: #F7F5E2;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #42DCA3; }
+  color: #28A7D7; }
   a:focus, a:hover {
     text-decoration: none;
-    color: #1d9b6c; }
+    color: #7ECAE7; }
 
 #mainNav {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-bottom: 0;
   text-transform: uppercase;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: black; }
+  background-color: #070E20; }
   #mainNav .navbar-toggler {
     font-size: 14px;
     padding: 11px;
@@ -55,7 +57,7 @@ a {
   #mainNav .navbar-brand {
     font-weight: 700; }
   #mainNav a {
-    color: white; }
+    color: #F7F5E2; }
   #mainNav .navbar-nav .nav-item {
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
@@ -161,7 +163,7 @@ a {
   text-align: center;
   color: white;
   background: url("/img/website-background.svg") no-repeat bottom center scroll;
-  background-color: black;
+  background-color: #070E20;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -234,14 +236,14 @@ a {
   border-radius: 0; }
 
 .btn-default {
-  color: #42DCA3;
-  border: 1px solid #42DCA3;
+  color: #28A7D7;
+  border: 1px solid #28A7D7;
   background-color: transparent; }
   .btn-default:focus, .btn-default:hover {
     color: black;
-    border: 1px solid #42DCA3;
+    border: 1px solid #28A7D7;
     outline: none;
-    background-color: #42DCA3; }
+    background-color: #28A7D7; }
 
 ul.banner-social-buttons {
   margin-top: 0; }
