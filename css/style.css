@@ -340,21 +340,31 @@ a:hover {
 }
 
 .sponsorlogo {
-    margin: 15px;
-    width: auto;
-    max-width: 100%;
+  margin: 15px;
+  width: auto;
+  max-width: 100%;
+  filter:contrast(0%);
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+
+.sponsorlogo:hover {
+  filter: contrast(100%);
 }
 
 @media (max-width: 768px) {
-    .sponsorlogo {
-        height: auto !important;
-    }
-    .seventyfivepercent {
-        max-width: 75%;
-    }
-    .fiftypercent {
-        max-width: 50%;
-    }
+  .sponsorlogo {
+    height: auto !important;
+  }
+  .seventyfivepercent {
+    max-width: 75%;
+  }
+  .fiftypercent {
+    max-width: 50%;
+  }
 }
 
 .btn {
