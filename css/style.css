@@ -104,14 +104,12 @@ p {
   font-family: "Prototype";
   font-size: 16px;
   line-height: 1.5;
-  margin: 0 0 25px;
 }
 
 @media (min-width: 768px) {
   p {
     font-size: 18px;
     line-height: 1.6;
-    margin: 0 0 35px;
   }
 }
 
@@ -299,6 +297,34 @@ a:hover {
   }
 }
 
+@keyframes fadeInDelay {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes fadeInDelay {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
 .masthead {
   display: table;
   width: 100%;
@@ -324,7 +350,12 @@ a:hover {
 }
 
 .masthead .intro-body .intro-text {
-  font-size: 18px;
+  font: 48px "Fira Mono", monospace;
+  color:#FFEB3B;
+  font-size: 28px;
+  animation: 1.5s ease-out 0s 1 fadeInDelay;
+  margin-top: 40px;
+  margin-bottom: -20px;
 }
 
 @media (min-width: 768px) {
@@ -336,8 +367,23 @@ a:hover {
     font-size: 100px;
   }
   .masthead .intro-body .intro-text {
-    font-size: 22px;
+    font-size: 56px;
+    animation: 1.5s ease-out 0s 1 fadeInDelay;
   }
+}
+
+.switcher {
+  font: 48px "Fira Mono", monospace;
+  overflow-x:hidden;
+  color:#FFEB3B;
+  text-transform: uppercase;
+  user-select:none;
+  cursor:default;
+  padding: 20px;
+}
+
+.switcher .shift {
+  display:none;
 }
 
 
@@ -454,9 +500,6 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
-
-
-
 
 /* ======== */
 /* SPONSORS */
