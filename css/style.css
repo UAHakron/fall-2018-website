@@ -386,6 +386,59 @@ a:hover {
   display:none;
 }
 
+.registration-button {
+  position: absolute;
+  font: 40px "Fira Mono", monospace;
+  color: #28A7D7;
+  width: 50%;
+  left: 25%;
+  letter-spacing: .05em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  background-color: rgba(40, 167, 215, 0.1);
+  border: 1px solid #28A7D7;
+  transition: all 0.3s ease 0s;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.registration-button:after {
+  content: "";
+  position: absolute;
+  background-color: #28A7D7;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  -webkit-transition: all .3s ease 0s;
+  -moz-transition: all .3s ease 0s;
+  -o-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+  z-index: -1;
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+
+.registration-button:hover {
+  padding-top: 9px;
+  padding-bottom: 11px;
+  color: #070E20;
+  text-shadow: none;
+  letter-spacing: .06em;
+}
+
+.registration-button:hover:after {
+  height: 320%;
+  
+}
+
+
 
 
 
@@ -464,8 +517,18 @@ a:hover {
   margin-top: 10px;
   cursor: pointer;
   text-align: center !important;
-  font-size: 20px;
+  font-size: 1em;
   background-color: #0B1838;
+}
+
+@media (max-width: 767px) {
+  .accordion-heading {
+    font-size: 0.8em;
+  }
+}
+
+.accordion-heading:hover {
+  letter-spacing: .01em;
 }
 
 .accordion-heading a {
@@ -566,6 +629,12 @@ body {
   transition:0.35s;
 }
 
+@media (max-width: 767px) {
+  .sponsorlogo {
+    filter:contrast();
+  }
+}
+
 .sponsorlogo:hover {
   filter: contrast(100%);
 }
@@ -612,22 +681,6 @@ ul.banner-social-buttons {
   margin-top: 0;
 }
 
-@media (max-width: 1199px) {
-  ul.banner-social-buttons {
-    margin-top: 15px;
-  }
-}
-
-@media (max-width: 767px) {
-  ul.banner-social-buttons li {
-    display: block;
-    margin-bottom: 20px;
-    padding: 0;
-  }
-  ul.banner-social-buttons li:last-child {
-    margin-bottom: 0;
-  }
-}
 
 ::-moz-selection {
   background: #fcfcfc;
