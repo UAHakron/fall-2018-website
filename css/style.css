@@ -441,6 +441,49 @@ a:hover {
 
 
 
+/* =================== */
+/* FAQ ACCORDION STUFF */
+/* =================== */
+
+.
+
+.accordion-group {
+  width: 100%;
+  margin: auto;
+}
+
+.accordion-heading {
+  /* background color, font color, font, size, dynamic based on media query */
+  /* hand dandy icon? use i tag? */
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "Oblivious";
+  height: 40px;
+  margin-top: 10px;
+  cursor: pointer;
+  text-align: center !important;
+  font-size: 20px;
+  background-color: #0B1838;
+}
+
+.accordion-heading a {
+  line-height: 40px;
+}
+
+.accordion-inner {
+  /* different background color, smaller text, same font? */
+  padding: 10px;
+  background-color: #1F2F5A;
+}
+
+.accordion-inner p {
+  margin: 0;  /* STRIP THEM OF THEIR RIGHTS TO HAVE A BUTT */
+}
+
+
+
 /* ==================== */
 /* RANDOM SECTION STUFF */
 /* ==================== */
@@ -500,6 +543,9 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
+
+
+
 
 /* ======== */
 /* SPONSORS */
