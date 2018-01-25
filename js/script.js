@@ -199,3 +199,20 @@ function init() {
   });
 
 }
+
+
+function addEmail() {
+   var email = $("#emailbox").val();
+
+   $.ajax({
+       url: "http://hakron.io/emailapi",
+       type: "POST",
+       data: { email: email },
+       success: function() {
+           alert('Successfully added!');
+       }, 
+       error: function() {
+           alert('Something went wrong. Restart the page and try again.');
+       }
+   });
+}
