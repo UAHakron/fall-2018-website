@@ -206,7 +206,7 @@ function addEmail() {
 
    $.ajax({
        url: "http://hakron.io/emailapi",
-       type: "POST",
+       type: "GET",
        data: { email: email },
        success: function() {
            alert('Successfully added!');
