@@ -587,11 +587,6 @@ a:hover {
   background-color: #0B1838;
 }
 
-@media (max-width: 767px) {
-  .accordion-heading {
-    font-size: 0.8em;
-  }
-}
 
 .accordion-heading:hover {
   letter-spacing: .01em;
@@ -611,6 +606,15 @@ a:hover {
   margin: 0;  /* STRIP THEM OF THEIR RIGHTS TO HAVE A BUTT */
 }
 
+@media (max-width: 767px) {
+  .accordion-heading {
+    font-size: 0.8em;
+    height:auto;
+  }
+  .accordion-heading a {
+    line-height: 30px;
+  }
+}
 
 
 /* ==================== */
