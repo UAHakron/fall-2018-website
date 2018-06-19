@@ -519,7 +519,6 @@ a:hover {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
-  border-radius: 0;
 }
 
 .btn-default {
@@ -530,9 +529,7 @@ a:hover {
 
 .btn-default:focus,
 .btn-default:hover {
-  color: black;
   border: 2px solid #28A7D7;
-  outline: none;
   background-color: #28A7D7;
 }
 .btn-circle {
@@ -545,19 +542,32 @@ a:hover {
   -moz-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   color: white;
-  border: 2px solid white;
-  border-radius: 100% !important;
+  border: 0.5px solid white;
+  border-radius: 100%;
   background: transparent;
 }
 
 .btn-circle:focus,
 .btn-circle:hover {
-  color: #28A7D7;
-  outline: none;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.01);
 }
 
-
+.btn-twitter:hover {
+  color: #1DA1F2;
+  border: 0.5px solid #1DA1F2;
+}
+.btn-facebook:hover {
+  color: #3B5998;
+  border: 0.5px solid #3B5998;
+}
+.btn-snapchat:hover {
+  color: #FFFC00;
+  border: 0.5px solid #FFFC00;
+}
+.btn-github:hover {
+  color: silver;
+  border: 0.5px solid silver;
+}
 
 
 /* =================== */
